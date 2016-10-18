@@ -59,14 +59,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\login.css" />
+    <Content Include="html\table.html" />
     <Content Include="js\jquery-3.0.0.min.js" />
     <Content Include="js\jquery.form.js" />
     <Content Include="js\login_check.js" />
+    <Content Include="js\mine.js" />
     <Content Include="js\Particleground.js" />
     <Content Include="js\verificationNumbers.js" />
     <Content Include="Web.config" />
     <Content Include="web\login.aspx" />
     <Content Include="web\message.aspx" />
+    <Content Include="web\test.aspx" />
     <Content Include="web\verify_code.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +103,13 @@
     <Compile Include="web\message.aspx.designer.cs">
       <DependentUpon>message.aspx</DependentUpon>
     </Compile>
+    <Compile Include="web\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="web\verify_code.aspx.cs">
       <DependentUpon>verify_code.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,9 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="html\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

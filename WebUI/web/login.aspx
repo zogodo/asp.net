@@ -5,25 +5,21 @@
 <head>
     <meta name="renderer" content="webkit" />
     <meta charset="utf-8" />
-    <title>桂林电子科技大学到课率统计系统</title>
     <meta name="author" content="DeathGhost" />
-    <link rel="stylesheet" type="text/css" href="../css/login.css" />
-    <style>
-        body {
-            height: 100%;
-            background: black;
-            overflow: hidden;
-        }
 
-        canvas {
-            z-index: -1;
-            position: absolute;
-        }
-    </style>
+    <title>桂林电子科技大学到课率统计系统</title>
+
     <script src="../js/jquery-3.0.0.min.js"></script>
+    <script src="../js/jquery.form.js"></script>
     <script src="../js/verificationNumbers.js"></script>
     <script src="../js/Particleground.js"></script>
-    <script src="../js/jquery.form.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <style>
+        body {height:100%;background:black;overflow:hidden;}
+        canvas {z-index:-1;position:absolute;}
+    </style>
+
     <script>
         $(document).ready(function () {
             //粒子背景特效
