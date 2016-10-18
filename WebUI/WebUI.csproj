@@ -58,18 +58,69 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\login.css" />
+    <Content Include="js\jquery-3.0.0.min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\login_check.js" />
+    <Content Include="js\Particleground.js" />
+    <Content Include="js\verificationNumbers.js" />
     <Content Include="Web.config" />
+    <Content Include="web\login.aspx" />
+    <Content Include="web\message.aspx" />
+    <Content Include="web\verify_code.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ashx\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\login_check.ashx.cs">
+      <DependentUpon>login_check.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\logout.ashx.cs">
+      <DependentUpon>logout.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass\CSVFileReader.cs" />
+    <Compile Include="MyClass\IsLowerIE.cs" />
+    <Compile Include="MyClass\JsonHelper.cs" />
+    <Compile Include="MyClass\SqlHelper.cs" />
+    <Compile Include="MyClass\User.cs" />
+    <Compile Include="MyClass\VerifyCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="web\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\message.aspx.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\message.aspx.designer.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="web\verify_code.aspx.cs">
+      <DependentUpon>verify_code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\verify_code.aspx.designer.cs">
+      <DependentUpon>verify_code.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ashx\login.ashx" />
+    <Content Include="ashx\login_check.ashx" />
+    <Content Include="ashx\logout.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
